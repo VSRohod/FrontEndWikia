@@ -1,0 +1,27 @@
+/* GERAL */
+:root{
+    --fontePrimaria : Roboto ;
+    --corPrimaria: #696d72 ;
+    --corSecundaria: #8E3BDB ;
+    --corBranca: white ;
+}
+
+*{
+    font-family: Roboto ;
+}
+
+/* HEADER */
+
+header,footer{
+    background-color: var(--corPrimaria) ;
+}
+
+.active{
+    background-color: var(--corSecundaria)!important;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+/* MAIN */
