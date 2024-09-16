@@ -4,10 +4,16 @@
     --corPrimaria: #696d72 ;
     --corSecundaria: #8E3BDB ;
     --corBranca: white ;
+    --corPreta : rgb(39, 36, 36) ; 
+    --corCode : rgb(146, 167, 225) ; 
 }
 
 *{
     font-family: Roboto ;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -25,3 +31,25 @@ header,footer{
 }
 
 /* MAIN */
+/* Codigos de estilização associados as caixas de texto para demonstração de códigos */
+.code{
+    width: 60%;
+    resize: none;
+    scrollbar-width: 0%;
+    background-color: var(--corPreta) ;
+    color: var(--corCode);
+}
+
+.CodeImportant{
+    background-color: var(--corSecundaria);
+    color: var(--corBranca);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.code h4{
+    background-color: var(--black) ;
+    color: var(--corBranca);
+}

@@ -1,0 +1,46 @@
+Comandos gerais HTML: 
+
+------------------------------------------------------------------------------------------------------------------
+Organização:
+
+- Div - 
+- Section - 
+- Nav -
+
+
+- ul - unordored list 
+- ol - Ordered list 
+- li - List item 
+
+- Types: square (quadrado), circle (Circulo), disc (Bolinha) 
+
+- dl - descripton list 
+- dt - description Term
+- dd - descrição do termo
+
+------------------------------------------------------------------------------------------------------------------- 
+Funções:
+
+- Input - Corresponde ao "Leia"
+- Input Type - Input e seu estilo
+
+-------------------------------------------------------------------------------------------
+Tabelas:
+(thead, tbody, tfoot)
+- tr - 
+- th -
+- td - 
+
+colapsan - Expandir a coluna
+rowspan - Expandir a linha
+
+----------------------------------------------------------------------------------------------------------
+Identificação:
+- Id - 
+- Class - 
+
+
+--------------------------------------------------------------------------------------------------------------
+Endereçamento:
+- Link - 
+- A - 

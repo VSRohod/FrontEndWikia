@@ -1,0 +1,80 @@
+Comando gerais CSS:
+
+Alinhamento (flexbox):
+- Display
+- Flex- direction - muda a orientação do flex
+Linha - row
+Coluna - Column
+Reverse - reverso
+- Justify-Content - Alinha na horizontal
+Space-around - Ajusta a extremidade e deixa algum espaço
+Space-Betwen - Coloca o elemento na extremidade
+Sapce-Evenly - Coloca os elementos mais no centro e deixa os espaços
+Strech - estica o elemento
+- Align-itens - Alinha a vertical
+- Gap - 
+- Text-align - 
+-----------------------------------------------------------------------------------------------------
+Posicionamento: 
+- Margin - espaço externo
+- Float - 
+- OverFlow - Esconde tudo que está fora de uma div
+------------------------------------------------------------------------------------------------------
+Tamanho: 
+- padding - espaço interno
+- Width - Largura
+- Heigth - Altura
+- Margin - 
+-------------------------------------------------------------------------------------------------------
+Personalização:
+- Border(Borda) - espressura, tipo e cor
+- Border radius - quanto arredonda 
+- Border-collapse - 
+- Box-shadow - 
+
+- Color - 
+- Opacity - Opacidade da cor
+
+- Bacground-color - Defini a cor de fundo
+- Background-image - coloca imagem
+- Background-repeat - controla repetição da imagem 
+- Background-size - ajusta o tamanho do background 
+- Background-position - Posição do Background
+
+- Text-decoration - 
+
+- #::after - Adiciona algo depois do elemento.
+- #::before - Adiciona algo antes do elemento.
+
+- Cursor - 
+- :hover - 
+- :empty -
+= :active - 
+
+-@Font-face - 
+-@Media
+---------------------------------------------------------------------------------------------------------
+Descobrir:
+- top - 
+- position - 
+
+
+----------------------------------------------------------------------------------------------------------
+Animação:
+- transition - 
+
+
+---------------------------------------------------------------------------------------------------------
+Imagens: 
+- Overflow - 
+- Overflow-y - 
+- Position - 
+- Top - 
+
+
+
+-------------------------------------------------------------------------
+Atalhos: 
+
+- (Windows + .) = Lista de emoji 
+
