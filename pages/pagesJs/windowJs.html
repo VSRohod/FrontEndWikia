@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndWiki - Js WINDOW</title>
+    <link rel="shortcut icon" href="../../images/icons/logo.svg" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Código Pessoal -->
+    <link rel="stylesheet" href="../../styles/all.css">
+</head>
+
+<body>
+    <!-- Header - menu navegação -->
+    <header class="bg-js container-fluid d-flex py-3 flex-wrap justify-content-center mb-4">
+        <div class="container d-flex">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span id="logo" class="fs-4 text-white"><img src="../../images/icons/logo.svg" alt=""> Front-End
+                    Wiki</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../../index.html" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="../html.html" class="nav-link text-white">Html</a></li>
+                <li class="nav-item"><a href="../css.html" class="nav-link text-white">Css</a></li>
+                <li class="nav-item"><a href="../js.html" class="nav-link text-white active"
+                        aria-current="page">Javascript</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header - menu navegação -->
+
+    <!-- conteudo -->
+    <main class="container-fluid d-flex py-3 flex-column align-items-center">
+        <section id="intro" class="container d-flex flex-column align-items-center">
+            <h3>JAVASCRIPT</h3>
+            <p>SEÇÃO PARA DOCUMENTAÇÃO DA SEÇÃO WINDOW</p>
+
+            <section id="allTopics">
+                <section class="topic container d-flex flex-column align-items-center">
+                    <button class="btn btn-primary my-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#localStorage" aria-expanded="false" aria-controls="collapseExample">
+                        LocalStorage
+                    </button>
+                    <div class="collapse" id="localStorage">
+                        <div class="card card-body">
+                            <p>localStorage é uma funcionalidade do JavaScript que permite armazenar dados no navegador
+                                do usuário de forma persistente, ou seja, os dados armazenados no localStorage não têm
+                                data de expiração, assim permanecendo disponíveis mesmo após o fechamento do navegador
+                                ou de páginas web por se manter justamente, ou em um sistemas de arquivos do dispositivo
+                                ou em um banco de dados SQLITE, não chega a ser visivel, porém é acessado por meio das
+                                ferramentas de desenvolvimento do navegador em questão.</p>
+                            <p>As vantagens do localStorage se definem em manter as informações salvas apenas no mesmo
+                                dominio que as criou, mantendo assim um grau de segurança maior. Tem uma capacidade de
+                                armazenamento de até 10Mb dependendo do navegador utilizado para salvar todo tipo de
+                                informação necessária. Além de contar com comandos simples que podem fácilmente serem
+                                implementados assim que necessário assim como os listados abaixo!</p>
+
+                            <ul>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>SET ITEM</h4>
+                                    </li>
+                                    <p>O comando setItem(key, value) é utilizado para armazenar uma chave e seu
+                                        respectivo valor na memória do navegador, ambos os valores passados deverão ser
+                                        string, caso contrário a conversão será feita automaticamente!</p>
+                                    <p>Exemplo :</p>
+                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//SET ITEM
+                                        localStorage.setItem('nome', 'João');
+                                        </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/window/localStorage/setItem.PNG"
+                                        alt="">
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>GET ITEM</h4>
+                                    </li>
+                                    <p>O comando getsItem(key) é utilizado para recuperar um valor associado a chave
+                                        fornecida, caso ela não exista, retornará null</p>
+                                    <p>Exemplo :</p>
+                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//GET ITEM
+                                        localStorage.getItem('nome');
+                                        </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/window/localStorage/getItem.PNG"
+                                        alt="">
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>REMOVE ITEM</h4>
+                                    </li>
+                                    <p>O comando removeItem(key) é utilizado para remover a chave fornecida, caso ela
+                                        não exista, nada irá acontecer</p>
+                                    <p>Exemplo :</p>
+                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//REMOVE ITEM
+                                        localStorage.removeItem('nome');
+                                        </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/window/localStorage/removeItem.PNG"
+                                        alt="">
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>CLEAR</h4>
+                                    </li>
+                                    <p>O comando clear() é utilizado para remover todos os itens da memória para o
+                                        domínio atual</p>
+                                    <p>Exemplo :</p>
+                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//CLEAR
+                                        localStorage.clear();
+                                        </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/window/localStorage/clear.PNG" alt="">
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>LENGTH</h4>
+                                    </li>
+                                    <p>O comando .length é utilizado para retornar o número de itens armazenados na
+                                        memória</p>
+                                    <p>Exemplo :</p>
+                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//LENGTH
+                                        localStorage.length;
+                                        </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/window/localStorage/length.PNG"
+                                        alt="">
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>KEY</h4>
+                                    </li>
+                                    <p>O comando key(index) é utilizado para retornar a chave do item na posição
+                                        especificada na memória, caso seja inválido retornará null</p>
+                                    <p>Exemplo :</p>
+                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//KEY
+                                        localStorage.key(0);
+                                        </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/window/localStorage/key.PNG" alt="">
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <!-- conteudo -->
+
+    <!-- footer -->
+    <footer class="bg-js container-fluid d-flex py-3 justify-content-center">
+        <h5 class="text-white">Site criado para fins didáticos</h5>
+    </footer>
+    <!-- footer -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <!-- Código Pessoal -->
+
+</body>
+
+</html>

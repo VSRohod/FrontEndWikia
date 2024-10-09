@@ -3,9 +3,19 @@
     --fontePrimaria : Roboto ;
     --corPrimaria: #696d72 ;
     --corSecundaria: #8E3BDB ;
+    --htmlCor : #e77400 ;
+    --cssCor : #0064e7 ;
+    --jsCor : #e7e700 ;
     --corBranca: white ;
     --corPreta : rgb(39, 36, 36) ; 
     --corCode : rgb(146, 167, 225) ; 
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *{
@@ -17,13 +27,33 @@ a{
 }
 
 /* HEADER */
+.bg-home{
+    background-color: var(--corPrimaria);
+}
 
-header,footer{
-    background-color: var(--corPrimaria) ;
+.bg-html{
+    background-color: var(--htmlCor);
+}
+
+.bg-css{
+    background-color: var(--cssCor);
+}
+
+.bg-js{
+    background-color: var(--jsCor);
+}
+
+.bg-js a,.bg-js span,.bg-js h5{
+    color: var(--corPreta)!important;
+}
+
+#logo img{
+    height: 24px;
 }
 
 .active{
-    background-color: var(--corSecundaria)!important;
+    background-color: var(--corBranca)!important;
+    color: var(--corPrimaria)!important;
 }
 
 .nav-link:hover{
@@ -32,6 +62,10 @@ header,footer{
 
 /* MAIN */
 /* Codigos de estilização associados as caixas de texto para demonstração de códigos */
+main{
+    flex-grow: 1;
+}
+
 .code{
     width: 60%;
     resize: none;
@@ -52,4 +86,11 @@ header,footer{
 .code h4{
     background-color: var(--black) ;
     color: var(--corBranca);
+}
+
+/* FOOTER */
+.footer-fixed{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
 }
