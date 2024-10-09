@@ -47,13 +47,15 @@
             <p>SEÇÃO PARA DOCUMENTAÇÃO DA SEÇÃO WINDOW</p>
 
             <section id="allTopics">
+                <!-- localStorage -->
                 <section class="topic container d-flex flex-column align-items-center">
                     <button class="btn btn-primary my-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#localStorage" aria-expanded="false" aria-controls="collapseExample">
-                        LocalStorage
+                        LOCAL STORAGE
                     </button>
                     <div class="collapse" id="localStorage">
                         <div class="card card-body">
+                            <h4 class="text-center my-3">LOCAL STORAGE</h4>
                             <p>localStorage é uma funcionalidade do JavaScript que permite armazenar dados no navegador
                                 do usuário de forma persistente, ou seja, os dados armazenados no localStorage não têm
                                 data de expiração, assim permanecendo disponíveis mesmo após o fechamento do navegador
@@ -76,8 +78,8 @@
                                         respectivo valor na memória do navegador, ambos os valores passados deverão ser
                                         string, caso contrário a conversão será feita automaticamente!</p>
                                     <p>Exemplo :</p>
-                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//SET ITEM
-                                        localStorage.setItem('nome', 'João');
+                                    <div class="codeName p-2">SET ITEM</div>
+                                    <textarea class="container-fluid code py-3 mb-3">localStorage.setItem('nome', 'João');
                                         </textarea>
                                     <img class="w-100" src="../../images/wikia/js/window/localStorage/setItem.PNG"
                                         alt="">
@@ -90,8 +92,8 @@
                                     <p>O comando getsItem(key) é utilizado para recuperar um valor associado a chave
                                         fornecida, caso ela não exista, retornará null</p>
                                     <p>Exemplo :</p>
-                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//GET ITEM
-                                        localStorage.getItem('nome');
+                                    <div class="codeName p-2">GET ITEM</div>
+                                    <textarea class="container-fluid code py-3 mb-3">localStorage.getItem('nome');
                                         </textarea>
                                     <img class="w-100" src="../../images/wikia/js/window/localStorage/getItem.PNG"
                                         alt="">
@@ -104,8 +106,8 @@
                                     <p>O comando removeItem(key) é utilizado para remover a chave fornecida, caso ela
                                         não exista, nada irá acontecer</p>
                                     <p>Exemplo :</p>
-                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//REMOVE ITEM
-                                        localStorage.removeItem('nome');
+                                    <div class="codeName p-2">REMOVE ITEM</div>
+                                    <textarea class="container-fluid code py-3 mb-3">localStorage.removeItem('nome');
                                         </textarea>
                                     <img class="w-100" src="../../images/wikia/js/window/localStorage/removeItem.PNG"
                                         alt="">
@@ -118,8 +120,8 @@
                                     <p>O comando clear() é utilizado para remover todos os itens da memória para o
                                         domínio atual</p>
                                     <p>Exemplo :</p>
-                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//CLEAR
-                                        localStorage.clear();
+                                    <div class="codeName p-2">CLEAR</div>
+                                    <textarea class="container-fluid code py-3 mb-3">localStorage.clear();
                                         </textarea>
                                     <img class="w-100" src="../../images/wikia/js/window/localStorage/clear.PNG" alt="">
                                 </div>
@@ -131,8 +133,8 @@
                                     <p>O comando .length é utilizado para retornar o número de itens armazenados na
                                         memória</p>
                                     <p>Exemplo :</p>
-                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//LENGTH
-                                        localStorage.length;
+                                    <div class="codeName p-2">LENGTH</div>
+                                    <textarea class="container-fluid code py-3 mb-3">localStorage.length;
                                         </textarea>
                                     <img class="w-100" src="../../images/wikia/js/window/localStorage/length.PNG"
                                         alt="">
@@ -145,8 +147,8 @@
                                     <p>O comando key(index) é utilizado para retornar a chave do item na posição
                                         especificada na memória, caso seja inválido retornará null</p>
                                     <p>Exemplo :</p>
-                                    <textarea class="container-fluid code py-3 my-3" id="htmlBase">//KEY
-                                        localStorage.key(0);
+                                    <div class="codeName p-2">KEY</div>
+                                    <textarea class="container-fluid code py-3 mb-3">localStorage.key(0);
                                         </textarea>
                                     <img class="w-100" src="../../images/wikia/js/window/localStorage/key.PNG" alt="">
                                 </div>
@@ -173,7 +175,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
         integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <!-- Código Pessoal -->
-
+    <script src="../../scripts/scripts.js"></script>
 </body>
 
 </html>

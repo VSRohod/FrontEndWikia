@@ -67,11 +67,15 @@ main{
 }
 
 .code{
-    width: 60%;
     resize: none;
-    scrollbar-width: 0%;
     background-color: var(--corPreta) ;
     color: var(--corCode);
+}
+
+.codeName{
+    background-color: var(--corPreta);
+    border-radius: 10px 10px 0px 0px;
+    color: var(--corBranca);
 }
 
 .CodeImportant{
