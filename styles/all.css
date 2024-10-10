@@ -66,6 +66,10 @@ main{
     flex-grow: 1;
 }
 
+.topicDesc img{
+    margin: 20px 0px;
+}
+
 .code{
     resize: none;
     background-color: var(--corPreta) ;

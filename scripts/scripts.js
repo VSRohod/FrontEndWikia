@@ -13,7 +13,7 @@ function ajustarAltura(textarea) {
 // Ajusta a altura ao carregar a página
 setTimeout(function() {
     textareas.forEach(textarea => ajustarAltura(textarea));
-}, 2000)
+}, 3000)
 
 // Ajusta a altura sempre que o conteúdo mudar
 textareas.forEach(textarea => {

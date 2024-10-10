@@ -86,10 +86,66 @@
                                     <p>O comando fetch(url, options) é utilizado para buscar e requisitar uma API </p>
                                     <p>Exemplo :</p>
                                     <div class="codeName p-2">KEY</div>
-                                    <textarea class="container-fluid code py-3 mb-3">fetch('https://viacep.com.br/ws/01001000/json/')
+                                    <textarea class="container-fluid code py-3">fetch('https://viacep.com.br/ws/01001000/json/')
                                     </textarea>
                                     <img class="w-100" src="../../images/wikia/js/api/fetch/fetch.PNG"
                                         alt="">
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>THEN</h4>
+                                    </li>
+                                    <p>O comando then() é utilizado lidar com a resolução de uma Promise. Ele é executado assim que a operação é executada com sucesso </p>
+                                    <p> Geralmente o comando then é utilizado para receber os valores vindos de uma operação bem sucedida ou para lidar com os dados processados. Assim podendo capturar os pontos de interesse da API requisitada</p>
+                                    <p>Exemplo :</p>
+                                    <div class="codeName p-2">THEN</div>
+                                    <textarea class="container-fluid code py-3">fetch('https://viacep.com.br/ws/01001000/json/').then( i => { return i.json()}).then(response => { console.log(response) })
+                                    </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/api/fetch/then.PNG"
+                                        alt="">
+                                    <p>Obs: Dentro deste exemplo em específico, nós temos o primeiro then para processar a resposta da API, e o segundo then para a lidar com os dados que foram processados, nesse caso o conteúdo em JSON no console.log</p>
+                                    <p>Adendo : O cep é o número que sempre está aqui "...ws/CEP/json..."</p>
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>CATCH</h4>
+                                    </li>
+                                    <p>O método catch() é utilizado para retornar e tratar erros que ocorrem durante a execução de uma Promise, sempre sendo executada assim que um Promise nos retornar "REJEITADO". Isso pode incluir diversos tipos de erros, como de conexão ou acesso aos dados.</p>
+                                    <p>Exemplo :</p>
+                                    <div class="codeName p-2">CATCH</div>
+                                    <textarea class="container-fluid code py-3">fetch('https://viacep.com.br/ws/0/json/').then( i => { return i.json()}).catch( console.log('Erro na API'))
+                                    </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/api/fetch/catch.PNG"
+                                        alt="">
+                                    <p>Obs: Dentro deste exemplo em específico, nós forçamos a API dar um problema passando a ela um cep "0", assim ela no final voltando a requisição como "REJEITADA", e além disso o nosso console.log mostrará nossa mensagem de erro</p>
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>RESOLVE</h4>
+                                    </li>
+                                    <p>O método resolve() é utilizado quando queremos marcar uma Promise como concluída! Geralmente quando passamos para a API que tal funcionalidade foi efetuada da maneira correta, assim ou finalizando o processo ou passando os resultados para um próximo then</p>
+                                    <p>Exemplo :</p>
+                                    <div class="codeName p-2">RESOLVE</div>
+                                    <textarea class="container-fluid code py-3">#
+                                    </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/api/fetch/#"
+                                        alt="Resolve code">
+                                </div>
+
+                                <div class="topicDesc my-3 border p-5">
+                                    <li>
+                                        <h4>REJECT</h4>
+                                    </li>
+                                    <p>O método reject() é utilizado quando queremos marcar uma Promise como falha! Geralmente quando passamos para a API que tal funcionalidade acabou dando erro em algum processo, assim finalizando o processo e devolvendo a mensagem de erro correspondente</p>
+                                    <p>Exemplo :</p>
+                                    <div class="codeName p-2">REJECT</div>
+                                    <textarea class="container-fluid code py-3">#
+                                    </textarea>
+                                    <img class="w-100" src="../../images/wikia/js/api/fetch/#"
+                                        alt="Reject Code">
                                 </div>
 
                             </ul>
