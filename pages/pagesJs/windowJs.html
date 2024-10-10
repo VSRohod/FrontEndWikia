@@ -17,31 +17,40 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Código Pessoal -->
     <link rel="stylesheet" href="../../styles/all.css">
+    <link rel="stylesheet" href="../../styles/@Media.css">
 </head>
 
 <body>
     <!-- Header - menu navegação -->
-    <header class="bg-js container-fluid d-flex py-3 flex-wrap justify-content-center mb-4">
-        <div class="container d-flex">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <header>
+        <nav class="bg-js navbar navbar-expand-lg">
+            <div class="container">
+                <a href="../../index.html"
+                class="d-flex align-items-center link-body-emphasis text-decoration-none">
                 <span id="logo" class="fs-4 text-white"><img src="../../images/icons/logo.svg" alt=""> Front-End
                     Wiki</span>
-            </a>
-
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="../../index.html" class="nav-link text-white">Home</a></li>
-                <li class="nav-item"><a href="../html.html" class="nav-link text-white">Html</a></li>
-                <li class="nav-item"><a href="../css.html" class="nav-link text-white">Css</a></li>
-                <li class="nav-item"><a href="../js.html" class="nav-link text-white active"
-                        aria-current="page">Javascript</a></li>
-            </ul>
-        </div>
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="headerNav">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="../html.html" class="nav-link text-white">Html</a></li>
+                    <li class="nav-item"><a href="../css.html" class="nav-link text-white">Css</a></li>
+                    <li class="nav-item"><a href="../js.html" class="nav-link text-white active" aria-current="page">Javascript</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
     <!-- Header - menu navegação -->
 
     <!-- conteudo -->
     <main class="container-fluid d-flex py-3 flex-column align-items-center">
+        <section id="buttons" class="container-fluid d-flex">
+            <a href="../js.html" class="btn btn-primary d-flex align-items-center gap-2"> <img src="../../images/icons/arrow-left.svg" alt=""> VOLTAR</a>
+        </section>
         <section id="intro" class="container d-flex flex-column align-items-center">
             <h3>JAVASCRIPT</h3>
             <p>SEÇÃO PARA DOCUMENTAÇÃO DA SEÇÃO WINDOW</p>
